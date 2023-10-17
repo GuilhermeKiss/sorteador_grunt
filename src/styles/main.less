@@ -2,8 +2,7 @@
 @fonteDoTitulo: Lobster, cursive;
 @corDoTexto: #fff;
 @corDeFundo: #eb3b5a;
-@corDoTextoDoBotao: #000;
-@corDoFundoDoBotao: #f7b731;
+@corDoFundoDoBotao: #50b5c7;
 
 body {
     background-color: @corDeFundo;
@@ -22,6 +21,13 @@ main {
     margin: 0 auto;
     font-size: 2em;
     text-align: center;
+
+    p {
+        font-size: 16px;
+        background-color: @corDoFundoDoBotao;
+        padding: 16px;
+        border-radius: 10px;
+    }
 }
 
 button {
@@ -32,14 +38,19 @@ button {
     margin-top: 16px;
     border-radius: 8px;
     background-color: @corDoFundoDoBotao;
-    color: @corDoTextoDoBotao;
+    color: @corDoTexto;
     font-family: @fontePrincipal;
+    border: none;
 
     &:hover {
-        background-color: @corDoTextoDoBotao;
+        background-color: @corDoTexto;
         color: @corDoFundoDoBotao;
         transition: all ease 1s;
     }
+}
+
+label {
+    font-weight: bold;
 }
 
 input {
